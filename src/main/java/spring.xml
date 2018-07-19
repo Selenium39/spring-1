@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 1.id具有唯一性 2.name 可以有多个可以同名 ３.当没有指定id,默认命名策略未类的全名 -->
+
+	<bean id="car1" class="com.wantao.spring1.Car">
+		<!--当注入的属性含特殊字符时,在value子节点中使用<![CDATA[＜属性＞]]>进行注入 -->
+		<!-- <property name="name"> <value><![CDATA["<bwm>"]]></value> </property> -->
+		<property name="name" value="bwm"></property>
+	</bean>
+	<bean id="person1" class="com.wantao.spring1.Person">
+	<property name="name" value="万涛"></property>
+	<property name="age" value="20"></property>
+	<property name="car" ref="car1"></property>
+	</bean>
+
+</beans>
