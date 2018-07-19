@@ -19,4 +19,5 @@
   &nbsp;&nbsp; &nbsp; &nbsp;   2.引用时可分为内部Bean(只能用一次，相当于内部类)和外部Bean<br/>
   &nbsp;&nbsp; &nbsp; &nbsp;   3.可以通过级联属性进行配置<br/>
   &nbsp;&nbsp; &nbsp; &nbsp;   4.可以以外部List,Map的方式注入<br/>
+  <br/>
 参考视频:https://ke.qq.com/course/280229
